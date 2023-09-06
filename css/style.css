@@ -21,6 +21,7 @@
   --second-color: #fd8f44;
   --text-color: #172317;
   --bg-color: #fff;
+  --java-color: rgb(19, 107, 184);
 }
 ::selection {
     color: var(--bg-color);
@@ -69,7 +70,7 @@ header {
 .logo {
     font-size: 1.5rem;
     font-weight: 600;
-    color: var(--bg-color);
+    color: var(--java-color);
 }
 
 .logo span {
@@ -192,4 +193,19 @@ header {
     -webkit-line-clamp: 3;
     -webkit-box-orient: vertical;
     overflow: hidden;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.profile-img {
+    width: 3.5rem;
+    height: 3.5rem;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    border: 2px solid var(--second-color);
 }
